@@ -1,0 +1,141 @@
+header.navigation-bar {
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 100%;
+  display: inline-block;
+  width: 20%;
+  background: url('../assets/images/logo.png') center center;
+  background-size: cover;
+}
+
+nav.nav {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+}
+
+ul.navbar {
+  height: inherit;
+  width: 100%;
+}
+
+ul.navbar {
+  display: flex;
+  align-items: center;
+}
+
+li.item-link {
+  height: inherit;
+  list-style: none;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.item-link:not(:last-child) {
+  margin-left: 2rem;
+}
+
+li.item-link:last-child {
+  margin-left: auto;
+  font-size: xx-large;
+  margin-right: 1rem;
+}
+
+li.item-link:last-child a.link {
+  position: relative;
+}
+li.item-link .cart-number {
+  position: absolute;
+  left: 9px;
+  bottom: 6px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: small;
+  font-weight: bold;
+}
+
+a.link {
+  text-decoration: none;
+  color: black;
+}
+
+/* Menu */
+.menu {
+  display: none; /* override /dist css */
+}
+
+/* From Tablet, Laptops & PC */
+@media only screen and (min-width: 768px) {
+  /* Underline Stroke animation */
+  nav ul li.item-link:not(:last-child) a,
+  nav ul li.item-link:not(:last-child) a:after,
+  nav ul li.item-link:not(:last-child) a:before {
+    transition: width 0.5s;
+  }
+
+  nav.nav ul.navbar li.item-link:not(:last-child) a.link {
+    position: relative;
+  }
+  nav.nav ul.navbar li.item-link:not(:last-child) a.link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: black;
+    height: 2px;
+  }
+  nav.nav ul.navbar li.item-link:not(:last-child) a.link:hover:after {
+    width: 100%;
+  }
+}
+
+/* For Phones */
+@media only screen and (max-width: 767px) {
+  /* Hide navigation bar */
+  nav.nav {
+    display: none;
+  }
+
+  #logo {
+    height: inherit;
+    width: 60%;
+  }
+
+  /* Menu */
+  .menu {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+
+    overflow: hidden;
+    padding: 0;
+    width: 25px;
+  }
+
+  /* Override /dist css */
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 25px;
+  }
+}

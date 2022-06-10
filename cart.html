@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commmerce</title>
+    <link rel="stylesheet" href="./dist/menu/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <!-- Navegation bar -->
+    <header class="navigation-bar">
+      <div id="logo" class="logo-container"></div>
+      <!-- Tablet, Laptops & PC nav -->
+      <nav class="nav">
+        <ul class="navbar">
+          <li class="item-link">
+            <a href="index.html" class="link">Home</a>
+          </li>
+          <li class="item-link">
+            <a href="store.html" class="link">Tienda</a>
+          </li>
+          <li class="item-link"><a href="faq.html" class="link">FAQ</a></li>
+          <li class="item-link">
+            <a href="about-us.html" class="link">Sobre nosotros</a>
+          </li>
+          <li class="item-link">
+            <a href="cart.html" class="link">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <small class="cart-number">3</small>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Phone menu nav -->
+      <button id="menu" class="menu hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </header>
+
+    <!-- Content Section -->
+    <main>
+      <!-- Products Blocks -->
+      <section class="product">
+        <aside class="img-container">
+          <img
+            src="https://img.ltwebstatic.com/images3_pi/2022/04/12/1649728643d7614909cd61f8e6b1918b9ec2f5f76e_thumbnail_405x552.jpg"
+            alt="Product"
+          />
+        </aside>
+        <article class="product-details">
+          <div class="name">
+            <h3>Halter Neck Backless Solid Romper</h3>
+          </div>
+          <div class="quantity"><b>Quantity</b>: 3</div>
+          <div class="price"><b>Price</b>: 10,00€</div>
+          <div class="fee"><b>Taxes</b>: 12%</div>
+          <div class="total"><b>Total</b>: 33,60€</div>
+        </article>
+      </section>
+
+      <button class="checkout-btn">Checkout</button>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer-basic">
+      <div class="social">
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-snapchat"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html">Home</a></li>
+        <li class="list-inline-item"><a href="store.html">Tienda</a></li>
+        <li class="list-inline-item"><a href="about-us.html">Sobre Mi</a></li>
+        <li class="list-inline-item"><a href="faq.html">FAQ</a></li>
+      </ul>
+      <p class="copyright">SHEIN © 2022</p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/c96beed14c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/global.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js"></script>
+  </body>
+</html>
