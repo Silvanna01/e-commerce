@@ -1,6 +1,10 @@
 @import url('./global.css');
 /* Navigation Bar Section */
 @import url('./header.css');
+/* Spinner */
+@import url('./spinner.css');
+/* Pagination Section */
+@import url('./pagination.css');
 /* Footer Section */
 @import url('./footer.css');
 
@@ -9,6 +13,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin-bottom: 4rem;
+  min-height: calc(100vh - 38rem);
 }
 
 .card {
@@ -55,9 +60,13 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  border: 1px solid black;
 }
 .card-body .add-to-cart:hover {
   text-decoration: underline;
+  cursor: pointer;
+  /* background-color: white;
+  color: black; */
 }
 
 @media only screen and (max-width: 600px) {

@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>e-commmerce</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>SHEIN</title>
     <link rel="stylesheet" href="./dist/menu/menu.css" />
     <link
       rel="stylesheet"
@@ -32,7 +37,7 @@
           <li class="item-link">
             <a href="cart.html" class="link">
               <i class="fa-solid fa-basket-shopping"></i>
-              <small class="cart-number">3</small>
+              <small class="cart-number">0</small>
             </a>
           </li>
         </ul>
@@ -47,27 +52,9 @@
 
     <!-- Content Section -->
     <main>
-      <!-- Products Blocks -->
-      <section class="product">
-        <aside class="img-container">
-          <img
-            src="https://img.ltwebstatic.com/images3_pi/2022/04/12/1649728643d7614909cd61f8e6b1918b9ec2f5f76e_thumbnail_405x552.jpg"
-            alt="Product"
-          />
-        </aside>
-        <article class="product-details">
-          <div class="name">
-            <h3>Halter Neck Backless Solid Romper</h3>
-          </div>
-          <div class="quantity"><b>Quantity</b>: 3</div>
-          <div class="price"><b>Price</b>: 10,00€</div>
-          <div class="fee"><b>Taxes</b>: 12%</div>
-          <div class="total"><b>Total</b>: 33,60€</div>
-        </article>
-      </section>
-
-      <button class="checkout-btn">Checkout</button>
+      <!-- Products coming from Cart.js -->
     </main>
+    
     <!-- Footer Section -->
     <footer class="footer-basic">
       <div class="social">
@@ -93,12 +80,16 @@
       <p class="copyright">SHEIN © 2022</p>
     </footer>
 
+    
+    
+
     <script
       src="https://kit.fontawesome.com/c96beed14c.js"
       crossorigin="anonymous"
     ></script>
     <script src="./js/global.js" defer></script>
     <script src="./js/cart.js" defer></script>
+    <script src="./js/success.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"
       defer

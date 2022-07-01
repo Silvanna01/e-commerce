@@ -3,10 +3,12 @@
 @import url('./header.css');
 /* Footer Section */
 @import url('./footer.css');
+/* Succes Animation */
+@import url('./success.css');
 
 main {
   width: 80%;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
 }
 
 section.product {
@@ -41,6 +43,22 @@ section.product {
   width: 100%;
 }
 
+.total-data {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.total-data > *:not(.checkout-btn) {
+  font-size: 1.5rem;
+}
+
+.total-data > .tax {
+  font-size: large;
+}
+
 .checkout-btn {
   all: unset;
   margin-top: 1rem;
@@ -49,13 +67,21 @@ section.product {
   color: white;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
-  float: right;
 }
 
 .checkout-btn:hover {
   cursor: pointer;
   background-color: white;
   color: black;
+}
+
+h2.notification {
+  min-height: calc(100vh - 27rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 3rem;
 }
 
 /* Tablets */
