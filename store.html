@@ -20,10 +20,14 @@
   <body>
     <!-- Navegation bar -->
     <header class="navigation-bar">
-      <div id="logo" class="logo-container"></div>
-      <!-- Tablet, Laptops & PC nav -->
       <nav class="nav">
-        <ul class="navbar">
+        <div id="logo" class="logo-container"></div>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
           <li class="item-link">
             <a href="index.html" class="link">Home</a>
           </li>
@@ -42,20 +46,13 @@
           </li>
         </ul>
       </nav>
-      <!-- Phone menu nav -->
-      <button id="menu" class="menu hamburger hamburger--spring" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
     </header>
 
     <!-- Content Section -->
     <main>
       <!-- Loading Spinner -->
       <span class="loader" id="loading-spinner"></span>
-      <section class="container">
-      </section>
+      <section class="container"></section>
       <section class="pagination">
         <ul>
           <!--pages or li are comes from javascript -->

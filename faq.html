@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>SHEIN</title>
     <link rel="stylesheet" href="./dist/menu/menu.css" />
     <link
@@ -16,10 +20,14 @@
   <body>
     <!-- Navegation bar -->
     <header class="navigation-bar">
-      <div id="logo" class="logo-container"></div>
-      <!-- Tablet, Laptops & PC nav -->
       <nav class="nav">
-        <ul class="navbar">
+        <div id="logo" class="logo-container"></div>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
           <li class="item-link">
             <a href="index.html" class="link">Home</a>
           </li>
@@ -38,14 +46,7 @@
           </li>
         </ul>
       </nav>
-      <!-- Phone menu nav -->
-      <button id="menu" class="menu hamburger hamburger--spring" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
     </header>
-
     <!-- Content Section -->
     <main>
       <div class="accordion">
@@ -132,12 +133,19 @@
           </div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-item-header">
-            ¿Como realizar mi pedido?
-          </div>
+          <div class="accordion-item-header">¿Como realizar mi pedido?</div>
           <div class="accordion-item-body">
             <div class="accordion-item-body-content">
-              Dirijase a la <a class="text-link" target="_blank" href="./store.html">tienda</a> seleccione el articulo que desea ordenar y efectue el agregar al carrito. Luego dirijase a su <a class="text-link" target="_blank" href="./cart.html">carrito</a> y seleccione el boton <b>Realizar Pedido</b> 
+              Dirijase a la
+              <a class="text-link" target="_blank" href="./store.html"
+                >tienda</a
+              >
+              seleccione el articulo que desea ordenar y efectue el agregar al
+              carrito. Luego dirijase a su
+              <a class="text-link" target="_blank" href="./cart.html"
+                >carrito</a
+              >
+              y seleccione el boton <b>Realizar Pedido</b>
             </div>
           </div>
         </div>
