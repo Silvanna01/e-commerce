@@ -1,6 +1,6 @@
 let totalPages = 20;
 
-function createPagination(totalPages, page) {
+const createPagination = (totalPages, page) => {
 
   let liTag = '';
   let active;

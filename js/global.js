@@ -1,5 +1,5 @@
 // Cart Icon
-(function refreshCart() {
+(() => refreshCart = () => {
   const cartIcon = document.querySelector('.link .cart-number');
   const cart = new Map(JSON.parse(window.localStorage.getItem('cart')));
   const cartSize = [...cart.values()].reduce((total, productInfo) => total + productInfo.quantity, 0);

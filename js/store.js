@@ -1,6 +1,3 @@
-
-
-
 // Get URL Params to display corresponding products
 const queryParams = new URLSearchParams(window.location.search);
 const currentPage = Number(queryParams.get('page')) === 0 ? 1 : Number(queryParams.get('page'));
@@ -28,15 +25,15 @@ getProducts(currentPage).then(products => {
 
 
 
-function setLoadingSpinner() {
+const setLoadingSpinner = () => {
   document.getElementById('loading-spinner').style.display = 'block';
 }
 
-function removeLoadingSpinner() {
+const removeLoadingSpinner = () => {
   document.getElementById('loading-spinner').style.display = 'none';
 }
 
-async function getProducts(page = 1) {
+const getProducts = async (page = 1) => {
   try {
     const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://eur.shein.com/c-index/getProducts?_lang=en&_ver=1.1.8&limit=24&page=${page}&routeId=00200200&type=selection`)}`);
     const data = await response.json();
@@ -47,7 +44,7 @@ async function getProducts(page = 1) {
   }
 }
 
-function createCard(item) {
+const createCard = (item) => {
   const { goods_img: imageUrl, goods_name: productName, salePrice: { usdAmountWithSymbol: price } } = item;
 
   const articleEl = document.createElement('article');
@@ -115,7 +112,7 @@ function createCard(item) {
   return card;
 }
 
-function addToCart(item) {
+const addToCart = (item) => {
   const cart = new Map(JSON.parse(window.localStorage.getItem('cart')));
 
   if (cart.has(item.goods_name)) {

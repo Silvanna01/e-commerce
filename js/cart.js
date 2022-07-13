@@ -1,7 +1,7 @@
 const mainEl = document.querySelector('main');
 
 
-(function populateCartProducts() {
+(() => populateCartProducts = () => {
 
   const cart = new Map(JSON.parse(window.localStorage.getItem('cart')));
 
@@ -31,7 +31,7 @@ const mainEl = document.querySelector('main');
   `;
 })();
 
-function createProductCard({ item, quantity }) {
+const createProductCard = ({ item, quantity }) => {
   const { goods_img: imageUrl, goods_name: name, salePrice: { usdAmount: price } } = item;
   const subTotal = quantity * price;
 
@@ -59,7 +59,7 @@ function createProductCard({ item, quantity }) {
 
 
 
-function checkout(bill) {
+const checkout = (bill) => {
 
   // Add Modal of Successful payment
   addModal().then(res => {
@@ -72,7 +72,7 @@ function checkout(bill) {
 
 }
 
-function addModal() {
+const addModal = () => {
 
   return new Promise((resolve, reject) => {
     const successAnimation = `
@@ -102,6 +102,6 @@ function addModal() {
 
 }
 
-function closeModal() {
+const closeModal = () => {
   document.getElementById('payment-success-modal').remove();
 }
